@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans - Student Tech Service BD</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Bungee&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Specific styles for Plans page as requested */
+        body {
+            /* Green and Yellow combo background */
+            background: linear-gradient(135deg, #064e3b 0%, #00ba8b 50%, #FFD700 100%);
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+
+        .plan-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-10px);
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: #FFD700;
+        }
+
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #FFD700;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-light-muted {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        /* Override navbar for this page compatibility */
+        #mainNav {
+            background-color: rgba(6, 78, 59, 0.9);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/Image/Gemini_Generated_Image_k9mmthk9mmthk9mm.png" alt="Student Tech BD" class="brand-logo">
+                <span class="brand-text">Student Tech BD</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="plans.html">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Plans Content -->
+    <section class="section-padding" style="padding-top: 120px;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold display-4">Choose Your Plan</h1>
+                <p class="lead text-white-75">Flexible pricing for businesses of all sizes.</p>
+                <hr class="divider my-4 mx-auto" style="border-color: #FFD700; opacity: 1;">
+            </div>
+
+            <div class="row justify-content-center">
+
+                <!-- Basic Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card plan-card h-100 p-4 text-center text-white">
+                        <div class="card-body">
+                            <h3 class="mb-3">Basic Plan</h3>
+                            <div class="plan-price mb-3">৳5,000</div>
+                            <p class="text-light-muted mb-4">Perfect for starters and personal portfolios.</p>
+                            <ul class="list-unstyled mb-4 text-start mx-auto" style="max-width: 200px;">
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>1 Page Website</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Mobile Responsive</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Basic Design</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>3 Days Delivery</li>
+                                <li class="text-white-50"><i class="fas fa-times me-2"></i>Contact Form</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn btn-primary w-100 rounded-pill fw-bold">Select
+                                Plan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standard Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card plan-card h-100 p-4 text-center text-white"
+                        style="border-color: #FFD700; background-color: rgba(255, 215, 0, 0.15);">
+                        <div
+                            class="position-absolute top-0 start-50 translate-middle badge bg-warning text-dark rounded-pill px-3 py-2">
+                            MOST POPULAR</div>
+                        <div class="card-body">
+                            <h3 class="mb-3">Standard Plan</h3>
+                            <div class="plan-price mb-3">৳10,000</div>
+                            <p class="text-light-muted mb-4">Great for small businesses and agencies.</p>
+                            <ul class="list-unstyled mb-4 text-start mx-auto" style="max-width: 200px;">
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Up to 5 Pages</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Mobile Responsive</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Modern Design</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Contact Form</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Social Media Links</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn btn-light w-100 rounded-pill fw-bold"
+                                style="color: #064e3b !important;">Select Plan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card plan-card h-100 p-4 text-center text-white">
+                        <div class="card-body">
+                            <h3 class="mb-3">Premium Plan</h3>
+                            <div class="plan-price mb-3">৳18,000</div>
+                            <p class="text-light-muted mb-4">For businesses needing full control and SEO.</p>
+                            <ul class="list-unstyled mb-4 text-start mx-auto" style="max-width: 200px;">
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Unlimited Pages</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Admin Panel</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>SEO Setup</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>1 Month Support</li>
+                                <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Domain & Hosting (1yr)
+                                </li>
+                            </ul>
+                            <a href="index.html#contact" class="btn btn-primary w-100 rounded-pill fw-bold">Select
+                                Plan</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 text-center text-white" style="background-color: rgba(0,0,0,0.5);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <p class="mb-3 small">Copyright &copy; Student Tech Service BD 2026</p>
+                    <div>
+                        <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href="#!"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href="#!"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1 rounded-circle" href="#!"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/8801742761220" class="whatsapp-float" target="_blank" style="text-decoration: none;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
